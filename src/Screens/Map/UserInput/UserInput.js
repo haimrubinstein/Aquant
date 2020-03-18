@@ -23,6 +23,7 @@ export default (props) => {
             <input value={lat} type={'text'} onChange={handleLatChange} placeholder={'Lat'}/>
             <input value={lng} type={'text'} onChange={handleLngChange} placeholder={'Lng'}/>
             <button onClick={onSelect}> Mark</button>
+            <button onClick={props.onClear}> Clear all</button>
         </div>
     )
 }

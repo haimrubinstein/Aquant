@@ -57,11 +57,23 @@ export default class Map extends React.Component {
         this.setState({map});
     }
 
+    onClear = () => {
+        let {map} = this.state;
+
+        this.setState({points: []});
+
+        if(!map) {
+            return;
+        }
+
+        map.entities.clear();
+    }
+
     render() {
         return (
             <div className={'content'}>
                 <div className={'user-input-container'}>
-                    <UserInput onSelect={this.onMark}/>
+                    <UserInput onSelect={this.onMark} onClear={this.onClear}/>
                 </div>
 
                 <div className={'map-container'}>

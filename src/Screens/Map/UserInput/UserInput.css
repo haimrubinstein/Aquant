@@ -5,7 +5,7 @@
     padding: 15% 5% 0;
 }
 
-.input-container input {
+.input-container input, .input-container button {
     height: 28px;
     margin: 15px 0;
 }
