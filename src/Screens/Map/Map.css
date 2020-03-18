@@ -1,0 +1,15 @@
+
+
+.content {
+    display: flex;
+    height: 100vh;
+}
+
+
+.user-input-container{
+    flex: 1;
+}
+
+.map-container {
+    flex: 3;
+}
