@@ -20,6 +20,7 @@ export default (props) => {
 
     return (
         <div className={'input-container'}>
+            <h2>Please enter lat and lng </h2>
             <input value={lat} type={'text'} onChange={handleLatChange} placeholder={'Lat'}/>
             <input value={lng} type={'text'} onChange={handleLngChange} placeholder={'Lng'}/>
             <button onClick={onSelect}> Mark</button>
